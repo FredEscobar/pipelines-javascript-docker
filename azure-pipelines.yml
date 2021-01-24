@@ -20,4 +20,7 @@ steps:
     containerRegistry: 'Freddy''s Docker Hub'
     repository: 'freddy169/$(imageName)'
     command: 'push'
+    tags: |
+      $(Build.BuildId)
+      latest
 
