@@ -14,3 +14,11 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: app/Dockerfile
+- task: Docker@2
+  displayName: Push image
+  inputs:
+    containerRegistry: 'Freddy''s Docker Hub'
+    repository: '$(imageName)'
+    command: 'build'
+    Dockerfile: '**/Dockerfile'
+
