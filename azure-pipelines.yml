@@ -18,6 +18,6 @@ steps:
   displayName: Push image
   inputs:
     containerRegistry: 'Freddy''s Docker Hub'
-    repository: '$(imageName)'
+    repository: 'freddy169/$(imageName)'
     command: 'push'
 
